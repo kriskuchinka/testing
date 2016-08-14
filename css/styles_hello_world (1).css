@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#main-head, .finished-header {
+	text-align: center;
+	padding-top: 18px;
+	color: red;
+}
+
+.welcome-info {
+	width: 70%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+.welcome-text {
+	text-align: center;
+}
+
+.fireworks-img {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 20px;
+}
+
+.progress-bar {
+	display: none;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: gray;
+	height: 20px;
+	border-radius: 8px;
+}
+
+form-modal {
+	margin-top: 26px;
+}
+
+.form-format {
+	text-align: left;
+	padding: 10px;
+	margin: 8px;
+}
+
+.progress-text {
+	color: white;
+	text-align: center;	
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	right: 40%;
+}
+
+.exit {
+	text-align: right;
+	color: white;
+	padding-right: 4px;
+	padding-top: 4px;
+}
+
+
+.modal-window {
+	position: relative;
+	border-style: solid;
+	border-size: 6px;
+	border-color: black;
+	height: 400px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	margin-top: 5%; 
+	display: none;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 8px;
+}
+
+.modal-text {
+	margin-bottom: 16px;
+}
+
+.drop-down {
+	text-align: center;
+}
+
+.dish-choices, .serving-size {
+	margin: 10px;
+	width: 60%;
+}
+
+.align-form {
+	width: 30%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.dish-choices {
+	padding: 20px;
+}
+
+.form-modal-1 {
+	text-align: center;
+	margin-top: 20px;
+	margin: 10px;
+}
+
+.dish-choices option, .serving-size option {
+	background-color: white;
+	margin: 10px;
+}
+
+.site-button {
+	margin: auto;
+	display: block;
+	text-align: center;
+	background-color: red;
+	color: white;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 18px;
+ 	box-shadow: 10px 10px 5px #888888;
+	border-radius: 8px;
+}
+
+.left-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	box-shadow: none;
+	margin: 10px;
+	border-type: solid;
+	border-color: white;
+	border-size: 4px;
+}
+
+.right-button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	box-shadow: none;
+	margin: 10px;
+	border-type: solid;
+	border-color: white;
+	border-size: 4px;
+}
+
+.finished-header {
+	display:none;
+	text-align: center;
+	padding-top: 18px;
+	color: red;
+}
+
+#form-data {
+	display:none;
+}
+
+#summary-message {
+	display:none;
+	padding: 35% 5%;
+}
+
+.finale, .form-finished {
+	display: none;
+}
+
+.final-font {
+	display: inline-block;
+	width: 40%;
+	margin: 5%;
+}
+
+.side-image {
+	display: inline-block;
+	width: 30%;
+	margin: 5%;
+}
+
+
+#closing-fireworks {
+	display: none;
+	width: 80%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 14px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}

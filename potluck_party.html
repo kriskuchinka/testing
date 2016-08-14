@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Hello, World</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles_hello_world.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<script src="js/scripts_potluck.js"></script>		
+
+</header>
+
+<body>
+	
+	<h1 id="main-head">Happy Fourth of July!</h1>
+	<h3 class="welcome-text" id="second-head">We are excited to have you celebrate and enjoy the holiday with us.</h3>
+
+	<div class="hero-img">
+		<img id="hero-fireworks"  class="fireworks-img" src="images/fireworks21.jpg" alt="Fireworks Show">
+	</div> <!-- end of fireworks-img div -->
+		
+	<div class="welcome-info" id="welcome-par">
+		<h4 class="welcome-heading">Welcome and thank you for your interest in our holiday BBQ! We plan on having a delicious potluck and a full fireworks show in the evening. Feel free to bring your own fireworks. Also, please give us an idea of what you are planning to bring for the potluck.</h4>
+	</div> <!-- end of welcome-info div -->	
+		
+	<p><button class="site-button" id="modal-start">Sign Up Here!</button></p>
+		
+		
+	<div class="progress-bar">
+		<p class="progress-text">Progress</p>
+		<div class="progress"></div> <!-- end of progress div -->
+	</div> <!-- end of progress-bar div -->
+		
+	<div class="modal-window" id="modal1">
+		<h1 class="exit">[X]</h1>
+		<h1 class="modal-text">General Contact Information</h1>
+		<p class="modal-text">Please fill out the following forms to help us prepare!</p>
+		<form class="form-modal form-modal-1" method="post" action="#">
+			<p><input name="first-name" placeholder="First Name" class="form-format" type="text" id="first-name"></p>
+			<p><input name="last-name" placeholder="Last Name" class="form-format" type="text" id="last-name"></p>
+			<p><input name="email-contact" placeholder="Contact Email" class="form-format" type="email" id="email"></p>
+			<p><input name="phone-contact" placeholder="Contact Phone" class="form-format" type="text" id="contact-phone"></p>
+		</form>
+		<button class="site-button right-button" id="change-1">Next Window</button>
+	</div> <!-- end of modal1 div -->
+	
+	
+	<div class="modal-window" id="modal2">
+		<h1 class="exit">[X]</h1>
+		<h1 class="modal-text">Potluck Plans</h1>
+		<p class="modal-text">If we all bring something delicious, we can have a great time! What can you bring?</p>
+		<div class="align-form"
+			<form class="form-modal form-modal-2">
+				<span class="drop-down">
+					<p><select id="dish" class="dish-choices">
+						<option value="showing-title-potluck"> What Can You Bring?</option>
+						<option value="Casserole">Casserole</option>
+						<option value="Pasta Dish">Pasta Dish</option>
+						<option value="Salad">Salad</option>
+						<option value="Snack Item">Snack Item</option>
+						<option value="Dessert">Dessert</option>
+						<option value="Other">Other</option>
+					</select></p>
+					
+					<p><select id="servings" class="serving-size">
+						<option value="first-option">Number of Servings</option>
+						<option value="Less than Five">Less than 5</option>
+						<option value="Less than Ten">Less than 10</option>
+						<option value="Less than Fifteen">Less than 15</option>
+						<option value="Less than Twenty">Less than 20</option>
+					</select></p>
+				</span> <!-- end of drop-down span -->
+				
+				<p>Gluten Free: <input type="radio" name="gluten-status" value="yes" class="form-format gluten-check" id="gluten-yes">Yes<input type="radio" name="gluten-status" value="no" class="form-format gluten-check" id="gluten-no">No</p>
+				<p>Vegan: <input type="radio" name="vegan-status" value="yes" class="form-format vegan-check" id="vegan-yes">Yes<input type="radio" name="vegan-status" value="no" class="form-format vegan-check" id="vegan-no">No</p>
+				<p>Organic: <input type="radio" name="organic-status" value="yes" class="form-format organic-check" id="organic-yes">Yes<input type="radio" name="organic-status" value="no" class="form-format organic-check" id="organic-no">No</p>
+			</form> <!-- end of form-modal, form-modal-2 -->
+		</div> <!-- end of form-alignment div -->	
+		<button class="site-button left-button" id="reverse-1">Previous Window</button>
+		<button class="site-button right-button" id="change-2">Next Window</button>
+	</div> <!-- end of modal2 div -->
+	
+	<div class="modal-window" id="modal3">
+			<h1 class="exit">[X]</h1>
+			<h1 class="modal-text">Modal Window 3</h1>
+			<textarea class="suggestions" id="comments-suggestions" cols="100" rows="10" name="comments-suggestions" value="Additional Comments and Questions" placeholder="This is the third modal window (and final). You can move backward to change things or submit. Thank you!"></textarea>
+			<button class="site-button left-button" id="reverse-2">Previous Window</button>
+			<button class="site-button right-button" id="change-3" type="submit" value="submit">Finish and Submit</button>
+	</div> <!-- end of modal3 div -->
+	
+	<!-- display all form information on blank page -->	
+	<section class="form-finished" id="confirmation">
+		
+		<!-- display fireworks image -->
+		<div class ="finale side-image">
+				<img src="images/fireworks2.jpeg" alt="Beautiful fireworks." id="closing-fireworks"/>
+		</div> <!-- end of side-image div -->
+
+		<!-- display font on right side by using div -->
+		<div class="finale final-font" id="font-side">
+			<h1 class="finished-header" id="form-header">We are going to have so much fun!</h1>
+			<h2 class="filled-form">Below is the information that you provided.</h2>
+			<h2 class="filled-form"> Please review it and if something is not right, you can <a href=# >cancel and start over</a>.</h2>
+			<h2 class="filled-form"> We look. forward to seeing you soon.</h2>
+		</div> <!-- end of final font div -->
+
+		
+		<!-- create space to display form information -->
+		<span id="form-data"></span>												
+	</section> <!-- end of form-finished -->
+	
+	<footer>
+		<h5>&copy;2016 Kuchinka</h5> 
+	</footer>
+	
+</body>
+</html>
